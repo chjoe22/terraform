@@ -1,0 +1,21 @@
+Technical Requirements
+- I would use GKE, because of their requirement of containerization  and automatic scaling. 
+It is also has strong security features and is highly reliable, which is both needed when you are working with user data.
+One could arge to go for GCF, which has a lower effort to manage and is serverless, but can also accommodate microservice applications.
+But because GKE is more focused towards containerization and cluster management i would go with that.
+
+- As for which storage service, i would use Firestore that it fulfills most requirements and has practically no downside 
+compared to other storage services that google cloud provides.
+
+- Networking design would have to take connectivity, security, scalability and performance into account, because they want a global reach and latency optimization. 
+For this you should use some load balancing as well and maybe use IAM and have firewall rules as well as subnets, to divide the VPC for organization and security.
+
+- Data security and IAM is a must have when working with personal data. 
+Only specific people should have access to users personal data and it should most definitely be stored securely.
+
+
+Non-Technical Requirements
+- Wanting global reach and secure data, works really well with a microservice architecture that GKE can provide. 
+Each country has its different rules about what counts as personal data, meaning you might need multiple databases to handle this issues. 
+It is also easily scalable and maintainable. 
+It will cost a lot of computing power and money for this to work, so they might need a bigger budget for it. 
